@@ -4,3 +4,4 @@ Bash scripting
 2-bring_me_home send the user to home
 3-listfiles prints cwd files in long format
 4-listmorefiles lists files in the long format, includfing hidden ones
+5-listfilesdigitonly lists teh files with group id displayed numerically
