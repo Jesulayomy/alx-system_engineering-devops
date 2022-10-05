@@ -12,3 +12,6 @@ Bash scripting
 10-back goes to the previous directory
 11-lists gives files in root and /boot
 12-filetype checks the kine of file iamafile is
+13-symbolic_link directs to another file at specified location
+14-copy_html copies html files
+
