@@ -6,4 +6,4 @@ Bash scripting
 4-listmorefiles lists files in the long format, includfing hidden ones
 5-listfilesdigitonly lists teh files with group id displayed numerically
 6-firstdirectory creates a directory in the specified folder
-
+7-movethatfile moves betty like a gentleman
