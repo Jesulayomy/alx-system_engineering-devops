@@ -20,6 +20,8 @@
 | 13-symbolic_link | Directs to another file at specified location | ln -s |
 | 14-copy_html | Copies html files using wildcards | * |
 
+---------------------------------------------------------------
+
 ### [0x01-shell_permissions](./0x01-shell_permissions)
 Using shell executeables to perform commands
 | Filename | Command |
@@ -42,6 +44,8 @@ Using shell executeables to perform commands
 | 7-everybody | chmod ugo+x |
 | 8-James_Bond | chmod 007 |
 | 9-John_Doe | chmod 753 |
+
+-------------------------------------------------------------
 
 ### [0x02-shell_redirections](./0x02-shell_redirections)
 Using shell commands to display and manipulate files
@@ -73,6 +77,8 @@ Using shell commands to display and manipulate files
 - echo "Best School" > \\\*\\\\\'\"Best\ School\"\\\'\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*\:\)
 - ls -la > ls_cwd_content
 - tail -1 iacta>> iacta
+
+-------------------------------------------------------------------------------
 
 ### [0x03-shell_variables_expansions](./0x03-shell_variables_expansions)
 Using global and local variables
