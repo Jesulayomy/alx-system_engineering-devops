@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# lists all processes
+pgrep -l -u root bash
