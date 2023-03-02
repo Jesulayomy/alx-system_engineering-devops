@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Displays the listening ports and their port numbers
+netstat -l -p
