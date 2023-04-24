@@ -1,25 +1,8 @@
 #!/usr/bin/env bash
 # Installs ngnix, listens on port 80, modifies the default web file, configures redirect_me
-
 apt-get -y update
 apt-get -y install nginx
-
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
 echo "Ceci n'est pas une page" > /var/www/html/custom_404_not_found.html
-
 sed -i "s/server_name  _;/server_name _;\n\trewrite ^\/redirect_me https:\/\/www.youtube.com\/watch?v=dQw4w9WgXcQ permanent;\n\n\terror_page 404 \/custom_404_not_found.html;\n\tlocation = \/custom_404_not_found.html {\n\t\troot \/usr\/share\/nginx\/html;\n\t\tinternal;\n\t}/" /etc/nginx/sites-available/default
 service nginx restart
-
-# sed -i "s/search/replace/" file
-
-# sed -i "s/
-# server_name _;/
-# server_name _;
-# 	rewrite ^/redirect_me https://www.youtube.com/watch?v=dQw4w9WgXcQ permanent;
-#
-# 	error_page 404 /custom_404_not_found.html;
-# 	location  = /custom_404_not_found.html {
-# 		root /usr/share/nginx/html;
-# 		internal;
-# 	}/"
-# /etc/nginx/sites-available/default
