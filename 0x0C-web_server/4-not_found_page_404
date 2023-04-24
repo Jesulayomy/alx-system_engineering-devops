@@ -4,9 +4,6 @@
 apt-get -y update
 apt-get -y install nginx
 
-ufw allow 'Nginx HTTP'
-echo 'y' | ufw enable
-
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
 echo "Ceci n'est pas une page" > /var/www/html/custom_404_not_found.html
 
