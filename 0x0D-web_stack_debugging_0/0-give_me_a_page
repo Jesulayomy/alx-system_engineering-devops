@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# starts apache2. Service apache2 status shows not running
+service apache2 start
