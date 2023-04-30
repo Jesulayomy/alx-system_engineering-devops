@@ -2,5 +2,5 @@
 # Installs ngnix, listens on port 80, modifies the default web file
 apt-get -y update
 apt-get -y install nginx
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
+echo "Hello World!" | tee /var/www/html/index.nginx-debian.html
 service nginx restart
