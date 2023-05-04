@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# displays information about subdomains
+
+function output()
+{
+	result=$(dig "$1" | grep -A1 'ANSWER SECTION:' | grep -v ';; ANSWER SECTION')
+	sub=$(echo "$1" | cut -d '.' -f 1)
+	record=$(echo "$result" | awk '{print $4}')
+	ip=$(echo "$result" | awk '{print $NF}')
+	echo "The subdomain $sub is a $record record and points to $ip"
+}
+
+if [ $# -ge 1 ];
+then
+	if [ $# -eq 2 ];
+	then
+		output "$2.$1"
+	else
+		output "www.$1"
+		output "lb-01.$1"
+		output "web-01.$1"
+		output "web-02.$1"
+	fi
+else
+	echo "Less than 1 arg"
+fi
