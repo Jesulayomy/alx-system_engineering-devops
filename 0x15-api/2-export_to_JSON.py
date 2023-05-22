@@ -1,11 +1,14 @@
 #!/usr/bin/python3
-""" Calls to data from the jsonplaceholder website parsed to json formats """
-
-import json
-import requests
-import sys
+"""
+    Calls to data from the jsonplaceholder website parsed to json formats
+    from task 0, extend your Python script to export data in the JSON format.
+"""
 
 if __name__ == "__main__":
+    import json
+    import requests
+    import sys
+
     EMPLOYEE_ID = sys.argv[1]
 
     link = "https://jsonplaceholder.typicode.com/users"

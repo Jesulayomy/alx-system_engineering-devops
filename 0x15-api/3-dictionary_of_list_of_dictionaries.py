@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-""" Calls all data from the jsonplaceholder website parsed to json formats """
+"""
+    Calls all data from the jsonplaceholder website parsed to json formats
+    Using what you did in the task #0, extend your Python
+    script to export data in the JSON format.
+"""
 
 import json
 import requests

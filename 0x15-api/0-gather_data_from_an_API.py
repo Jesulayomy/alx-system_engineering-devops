@@ -1,10 +1,17 @@
 #!/usr/bin/python3
-""" Calls to data from the jsonplaceholder website """
+"""
+    Using REST API, for a given employee ID, returns information about his/her
+    TODO list progress. Calls to data from the jsonplaceholder website. The
+    script must display on the standard output the employee TODO list progress
+"""
 
-import requests
-import sys
 
 if __name__ == "__main__":
+    """ Second and N next lines display the title of completed tasks """
+
+    import requests
+    import sys
+
     EMPLOYEE_ID = sys.argv[1]
 
     link = "https://jsonplaceholder.typicode.com/users"
