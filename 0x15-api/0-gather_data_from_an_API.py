@@ -4,8 +4,6 @@
     TODO list progress. Calls to data from the jsonplaceholder website. The
     script must display on the standard output the employee TODO list progress
 """
-
-
 if __name__ == "__main__":
     """ Second and N next lines display the title of completed tasks """
 

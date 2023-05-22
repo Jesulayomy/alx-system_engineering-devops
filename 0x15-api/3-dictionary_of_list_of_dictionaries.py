@@ -4,12 +4,16 @@
     Using what you did in the task #0, extend your Python
     script to export data in the JSON format.
 """
-
-import json
-import requests
-import sys
-
 if __name__ == "__main__":
+    """
+        Calls all data from the jsonplaceholder website parsed to json
+        formats Using what you did in the task #0, extend your Python
+        script to export data in the JSON format.
+    """
+    import json
+    import requests
+    import sys
+
     link = "https://jsonplaceholder.typicode.com"
     fileName = "todo_all_employees.json"
 
