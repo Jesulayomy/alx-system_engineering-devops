@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     link = "https://jsonplaceholder.typicode.com/users"
     userResponse = requests.get(f"{link}/{EMPLOYEE_ID}")
-    EMPLOYEE_NAME = userResponse.json().get("name")
+    EMPLOYEE_NAME = userResponse.json().get("username")
     fileName = "{}.json".format(EMPLOYEE_ID)
 
     todoList = requests.get(f"{link}/{EMPLOYEE_ID}/todos").json()

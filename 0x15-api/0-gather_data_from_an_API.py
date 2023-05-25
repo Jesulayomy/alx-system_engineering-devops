@@ -24,7 +24,7 @@ if __name__ == "__main__":
             if task.get('completed') is True
         ]
 
-    print("Employee {} is done with tasks({}/{})".format(
+    print("Employee {} is done with tasks({}/{}):".format(
         EMPLOYEE_NAME,
         len(completed),
         total))
